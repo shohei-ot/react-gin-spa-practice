@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: React Gin SPA Practice API
+  version: 0.1.0
+servers:
+- url: /
+paths:
+  /:
+    get:
+      responses:
+        "200":
+          content:
+            text/html:
+              schema:
+                example: <h1>Welcome to React Gin SPA Practice API</h1>
+                type: string
+          description: OK
+  /api/ping:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/_api_ping_get_200_response"
+          description: OK
+  /api/ping2:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/_api_ping2_get_200_response"
+          description: OK
+components:
+  schemas:
+    _api_ping2_get_200_response:
+      example:
+        message: pong2
+      properties:
+        message:
+          example: pong2
+          type: string
+      type: object
+    _api_ping_get_200_response:
+      example:
+        message: pong
+      properties:
+        message:
+          example: pong
+          type: string
+      type: object

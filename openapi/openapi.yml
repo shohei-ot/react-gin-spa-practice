@@ -1,0 +1,31 @@
+openapi: '3.0.3'
+info:
+  title: React Gin SPA Practice API
+  version: '0.1.0'
+paths:
+  /api/ping:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: pong
+  /api/ping2:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: pong2
