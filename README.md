@@ -3,11 +3,15 @@
 ## About
 
 This is my practice project.  
-I'll try to learn how to create a SPA using React.js (TypeScript) and RESTful API built with Golang (Gin).
+I'll try to learn how to create a SPA using React.js (TypeScript) and RESTful API built with Gin (Golang).
 
 ## Build
 
 ```sh
+cd frontend
+npm i
+npm run build
+cd ..
 make
 ```
 
@@ -27,7 +31,7 @@ openapi-generator generate \
   -g go-gin-server \
   -o ./backend \
   --git-user-id=shohei-ot \
-  --git-repo-id=react-gin-spa-practice/backend
+  --git-repo-id=react-gin-spa-practice
 ```
 
 ### Generate api client (swr)
