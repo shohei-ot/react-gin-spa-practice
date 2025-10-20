@@ -29,7 +29,7 @@ make
 openapi-generator generate \
   -i ./openapi/openapi.yml \
   -g go-gin-server \
-  -o ./backend \
+  -o . \
   --git-user-id=shohei-ot \
   --git-repo-id=react-gin-spa-practice
 ```
