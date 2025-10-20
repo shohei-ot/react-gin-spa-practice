@@ -8,10 +8,6 @@ I'll try to learn how to create a SPA using React.js (TypeScript) and RESTful AP
 ## Build
 
 ```sh
-cd frontend
-npm i
-npm run build
-cd ..
 make
 ```
 
