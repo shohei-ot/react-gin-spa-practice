@@ -21,4 +21,3 @@ run: build ## Build and run the server (use PORT=xxxx to specify port)
 clean: ## Remove build artifacts
 	rm -rf $(BUILD_DIR)
 	rm -rf $(FRONTEND_DIR)/dist
-	rm -rf $(FRONTEND_DIR)/node_modules
